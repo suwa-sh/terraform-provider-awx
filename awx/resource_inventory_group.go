@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	awxgo "github.com/mauromedda/awx-go"
+	awxgo "github.com/suwa-sh/awx-go"
 )
 
 func resourceInventoryGroupObject() *schema.Resource {

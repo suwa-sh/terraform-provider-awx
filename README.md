@@ -1,7 +1,7 @@
 # terraform-provider-awx
 
 ***UNDER DEVELOPMENT ***
-terraform-provider-awx is still in developing, and it's roadmap could be found at [here](https://github.com/mauromedda/terraform-provider-awx/blob/master/ROADMAP.md).
+terraform-provider-awx is still in developing, and it's roadmap could be found at [here](https://github.com/suwa-sh/terraform-provider-awx/blob/master/ROADMAP.md).
 
 
 Terraform Provider
@@ -22,17 +22,17 @@ Requirements
 Building The Provider
 ---------------------
 
-Clone repository to: `$GOPATH/src/github.com/mauromedda/terraform-provider-awx.git`
+Clone repository to: `$GOPATH/src/github.com/suwa-sh/terraform-provider-awx.git`
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/mauromedda; cd $GOPATH/src/github.com/mauromedda
+$ mkdir -p $GOPATH/src/github.com/suwa-sh; cd $GOPATH/src/github.com/suwa-sh
 $ git clone git@github.com:mauromedda/terraform-provider-awx.git
 ```
 
 Enter the provider directory and build the provider
 
 ```sh
-$ cd $GOPATH/src/github.com/mauromedda/terraform-provider-awx
+$ cd $GOPATH/src/github.com/suwa-sh/terraform-provider-awx
 $ make build
 ```
 

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	awxgo "github.com/mauromedda/awx-go"
+	awxgo "github.com/suwa-sh/awx-go"
 )
 
 func resourceGroupAssociationObject() *schema.Resource {
