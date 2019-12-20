@@ -1,4 +1,4 @@
-package tower
+package awx
 
 import (
 	"fmt"
@@ -6,8 +6,9 @@ import (
 
 	"strconv"
 
+	"github.com/mpeter/go-towerapi/towerapi"
+	"github.com/mpeter/go-towerapi/towerapi/credentials"
 	"github.com/hashicorp/terraform/helper/schema"
-	awxgo "github.com/mauromedda/awx-go"
 )
 
 func resourceCredential() *schema.Resource {
@@ -142,10 +143,10 @@ func resourceCredential() *schema.Resource {
 }
 
 func resourceCredentialCreate(d *schema.ResourceData, meta interface{}) error {
-	awx := m.(*awxgo.AWX)
-	awxServiceCredential := awx.CredentialService
+	client := meta.(*towerapi.Client)
+	service := client.Credentials
 
-	request, err := awxServiceCredential.
+	request, err := buildCredential(d, meta)
 	if err != nil {
 		return err
 	}
